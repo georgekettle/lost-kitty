@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  image: MyString
+  species: MyString
+  date_found: 2021-11-16
+  address: MyString
+  number: MyString
+  found_by: MyString
+
+two:
+  name: MyString
+  image: MyString
+  species: MyString
+  date_found: 2021-11-16
+  address: MyString
+  number: MyString
+  found_by: MyString

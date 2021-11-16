@@ -1,0 +1,11 @@
+<div class="max-w-3xl mx-auto">
+    <%= image_tag @pet.image, alt: "#{@pet.species} - #{@pet.name}", class: "w-96" %>
+    <h1>Name: <span class="text-gray-400"><%= @pet.name %></span></h1>
+    <p>Spotted at: <%= @pet.address %></p>
+    <p>Species: <%= @pet.species %></p>
+    <p>Spotted on: <%= @pet.date_found %></p>
+    <p>Call <%= @pet.found_by %> on <%= @pet.number %></p>
+    <%= link_to 'Back', pets_path %>
+    <%= link_to 'Edit', edit_pet_path(@pet) %>
+    <%= link_to 'Delete', pet_path(@pet), method: :delete, data: {confirm: "Are you sure you want to delete #{@pet.name}... They look so cute!"} %>
+</div>
